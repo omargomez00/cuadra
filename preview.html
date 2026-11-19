@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuadra · Vista previa de la plantilla</title>
+<link rel="icon" href="assets/logo-cuadra.svg">
+<style>
+  :root{
+    --verde:#0E7B4F; --verde-800:#08543A; --ambar:#F2A900;
+    --menta:#E9F6EF; --linea:#DCE9E1; --gris:#5E7168;
+    --fondo:#F2F7F4;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:0 0 60px;
+    font-family:"Segoe UI Variable Display","Segoe UI",system-ui,sans-serif;
+    background:var(--fondo); color:#0F241C;
+  }
+  header{
+    display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+    padding:18px clamp(16px,4vw,40px);
+    background:#fff; border-bottom:1px solid var(--linea);
+    position:sticky; top:0; z-index:10;
+  }
+  header img{width:42px;height:42px;border-radius:11px}
+  header h1{font-size:16px;margin:0;letter-spacing:-.01em}
+  header p{margin:2px 0 0;font-size:12px;color:var(--gris)}
+  header .enlaces{margin-left:auto;display:flex;gap:8px}
+  header a{
+    text-decoration:none;font-size:13px;font-weight:700;color:var(--verde-800);
+    padding:9px 15px;border-radius:999px;border:1px solid var(--linea);background:#fff;
+  }
+  header a:hover{background:var(--menta);border-color:#BFE3D1}
+
+  main{width:min(940px,100% - 32px);margin:0 auto}
+  section{padding:30px 0 4px}
+  .titulo{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+  .titulo h2{font-size:14px;text-transform:uppercase;letter-spacing:.12em;margin:0;color:var(--verde-800)}
+  .titulo span{font-size:12px;color:var(--gris)}
+
+  .fila{display:flex;gap:22px;flex-wrap:wrap;align-items:flex-start}
+
+  .dispositivo{
+    position:relative;overflow:hidden;background:#fff;
+    border-radius:14px;box-shadow:0 26px 60px -34px rgba(8,84,58,.65);
+    border:1px solid var(--linea);
+  }
+  .dispositivo iframe{position:absolute;top:0;left:0;border:0;transform-origin:top left}
+
+  .desk{width:864px;height:540px;max-width:100%}
+  .desk iframe{width:1440px;height:900px;transform:scale(.6)}
+
+  .desk-alto{width:864px;height:600px;max-width:100%}
+  .desk-alto iframe{width:1440px;height:1000px;transform:scale(.6)}
+
+  .telefono{
+    width:305px;height:642px;border-radius:30px;padding:0;
+    border:8px solid #0C2A1F;background:#0C2A1F;
+    box-shadow:0 26px 60px -30px rgba(8,84,58,.75);
+  }
+  .telefono iframe{width:390px;height:844px;transform:scale(.741);border-radius:22px}
+
+  .nota{
+    margin-top:12px;font-size:12px;color:var(--gris);
+    display:flex;gap:7px;align-items:center;
+  }
+  .nota b{color:var(--verde-800)}
+
+  @media (max-width:900px){
+    .desk,.desk-alto{height:auto;aspect-ratio:1440/900;width:100%}
+    .desk iframe,.desk-alto iframe{transform:scale(1);width:100%;height:100%}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo-cuadra.svg" alt="Cuadra">
+  <div>
+    <h1>Plantilla Cuadra · vista previa</h1>
+    <p>Escritorio, móvil y página de producto</p>
+  </div>
+  <div class="enlaces">
+    <a href="cajero.html" target="_blank" rel="noopener">Abrir cajero</a>
+    <a href="nosotros.html" target="_blank" rel="noopener">Abrir nosotros</a>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <div class="titulo">
+      <h2>1 · Cajero en portátil</h2>
+      <span>1440 × 900 · menú lateral, catálogo y ticket de venta</span>
+    </div>
+    <div class="dispositivo desk">
+      <iframe src="cajero.html" title="Vista de cajero en portátil"></iframe>
+    </div>
+    <p class="nota">💡 Puedes desplazarte y hacer clic dentro del marco: es la página real.</p>
+  </section>
+
+  <section>
+    <div class="titulo">
+      <h2>2 · Cajero en celular</h2>
+      <span>390 × 844 · catálogo a dos columnas, hoja de venta y barra inferior</span>
+    </div>
+    <div class="fila">
+      <div class="dispositivo telefono">
+        <iframe src="cajero.html" title="Vista de cajero en celular"></iframe>
+      </div>
+      <div class="dispositivo telefono">
+        <iframe src="nosotros.html" title="Vista de la página Nosotros en celular"></iframe>
+      </div>
+    </div>
+    <p class="nota">💡 En el celular, toca <b>Ver venta</b> para abrir la hoja inferior de cobro.</p>
+  </section>
+
+  <section>
+    <div class="titulo">
+      <h2>3 · Página Nosotros / producto</h2>
+      <span>1440 × 1000 · hero, funcionalidades, planes y validación</span>
+    </div>
+    <div class="dispositivo desk-alto">
+      <iframe src="nosotros.html" title="Página Nosotros en portátil"></iframe>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>
