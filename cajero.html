@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E7B4F">
+<title>Cuadra · Cajero</title>
+<link rel="icon" href="assets/logo-cuadra.svg">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ================= BARRA LATERAL ================= -->
+  <aside class="sidebar">
+    <a class="marca" href="nosotros.html" title="Ir a la página Nosotros">
+      <img class="marca__logo" src="assets/logo-cuadra.svg" alt="Cuadra">
+      <span>
+        <span class="marca__nombre">Cuadra</span><br>
+        <span class="marca__sub">Punto de venta</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <p class="nav__titulo">Operación</p>
+
+      <a class="nav-item activo" href="cajero.html" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
+        Cajero
+      </a>
+
+      <a class="nav-item" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l4 4v16H6z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+        Ventas
+        <span class="nav-item__badge">37</span>
+      </a>
+
+      <a class="nav-item" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+        Inventario
+      </a>
+
+      <a class="nav-item" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+        Reportes
+      </a>
+
+      <p class="nav__titulo" style="margin-top:18px">Negocio</p>
+
+      <a class="nav-item" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1A1.7 1.7 0 0 0 4.6 9a1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+        Configuración
+      </a>
+    </nav>
+
+    <div class="sidebar__pie">
+      <div class="tarjeta-plan">
+        <strong>Plan Premium activo</strong>
+        <span>Inventario y alertas incluidas</span>
+        <a href="nosotros.html#planes">Ver mi plan →</a>
+      </div>
+      <div class="usuario">
+        <span class="avatar">OA</span>
+        <span class="usuario__info">
+          <b>Omar Gómez</b>
+          <span>Cajero · Turno mañana</span>
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= CONTENIDO ================= -->
+  <main class="pos">
+
+    <header class="topbar">
+      <a class="topbar__marca" href="nosotros.html">
+        <img src="assets/logo-cuadra.svg" alt="">
+        <span>Cuadra</span>
+      </a>
+
+      <span class="estado"><span class="estado__punto"></span> Turno abierto<span class="estado__extra"> · Caja 1</span></span>
+      <span class="topbar__fecha">Jueves, 19 de noviembre de 2026</span>
+
+      <div class="topbar__acciones">
+        <button class="icono-btn" type="button" aria-label="Notificaciones">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+        </button>
+        <a class="icono-btn icono-btn--info" href="nosotros.html" aria-label="Ver la página del producto">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>
+        </a>
+        <span class="avatar" style="background:#0E7B4F;color:#fff">OA</span>
+      </div>
+    </header>
+
+    <div class="pos-grid">
+
+      <!-- ---------- Catálogo ---------- -->
+      <section class="catalogo" aria-label="Catálogo de productos">
+        <div class="catalogo__cab">
+          <div>
+            <h1>Punto de venta</h1>
+            <p class="muted">Toca un producto para agregarlo a la venta</p>
+          </div>
+          <div class="buscador">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="buscar" type="search" placeholder="Buscar producto…" aria-label="Buscar producto">
+          </div>
+        </div>
+
+        <div class="chips" id="chips" role="tablist" aria-label="Categorías"></div>
+        <div class="productos" id="productos"></div>
+      </section>
+
+      <!-- ---------- Ticket ---------- -->
+      <aside class="ticket" id="ticket" aria-label="Venta actual">
+        <div class="ticket__cab">
+          <div>
+            <h2>Venta actual</h2>
+            <p id="cantidadItems">0 artículos</p>
+          </div>
+          <span class="ticket__folio" id="folio">#124</span>
+          <button class="icono-btn ticket__cerrar" id="cerrarTicket" type="button" aria-label="Cerrar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+
+        <div class="ticket__items" id="items"></div>
+
+        <div class="ticket__pie">
+          <div class="resumen-turno">
+            <div><span>Ventas de hoy</span><b>$248.500</b></div>
+            <div><span>Efectivo esperado</span><b>$198.500</b></div>
+          </div>
+
+          <div class="fila"><span>Subtotal</span><b id="subtotal">$0</b></div>
+          <div class="fila"><span>Descuento</span><b>—</b></div>
+          <div class="fila fila--total"><span>Total</span><b id="total">$0</b></div>
+
+          <div class="pagos" role="group" aria-label="Método de pago">
+            <button class="pago activo" type="button" data-pago="Efectivo"><em>💵</em> Efectivo</button>
+            <button class="pago" type="button" data-pago="Nequi"><em>📱</em> Nequi</button>
+            <button class="pago" type="button" data-pago="Tarjeta"><em>💳</em> Tarjeta</button>
+          </div>
+
+          <button class="btn-cobrar" id="cobrar" type="button">
+            Cobrar <span id="cobrarTotal">$0</span>
+          </button>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+</div>
+
+<!-- ================= NAVEGACIÓN MÓVIL ================= -->
+<nav class="bottom-nav" aria-label="Navegación móvil">
+  <a class="activo" href="cajero.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg>
+    Cajero
+  </a>
+  <a href="#">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l4 4v16H6z"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+    Ventas
+  </a>
+  <a href="#">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+    Inventario
+  </a>
+  <a href="nosotros.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg>
+    Nosotros
+  </a>
+</nav>
+
+<!-- Barra flotante del carrito (móvil) -->
+<div class="cart-bar" id="cartBar" hidden>
+  <div class="cart-bar__info">
+    <span id="cartBarInfo">0 artículos</span>
+    <b id="cartBarTotal">$0</b>
+  </div>
+  <button type="button" id="abrirTicket">Ver venta</button>
+</div>
+
+<div class="scrim" id="scrim"></div>
+
+<!-- ================= MODAL DE COBRO ================= -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+  <div class="modal__caja">
+    <div class="modal__icono">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </div>
+    <h3 id="modalTitulo">Confirmar cobro</h3>
+    <p>Revisa el monto antes de cerrar la venta.</p>
+
+    <div class="modal__total">
+      <span>Total a cobrar</span>
+      <b id="modalTotal">$0</b>
+    </div>
+
+    <div class="campo">
+      <label for="efectivo">Efectivo recibido</label>
+      <input id="efectivo" type="number" inputmode="numeric" min="0" step="100" placeholder="0">
+    </div>
+
+    <div class="cambio">
+      <span>Cambio</span>
+      <b id="cambio">$0</b>
+    </div>
+
+    <div class="modal__acciones">
+      <button class="btn btn-ghost" type="button" id="cerrarModal">Cancelar</button>
+      <button class="btn btn-primary" type="button" id="confirmarVenta">Registrar venta</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+  <span>Producto agregado</span>
+</div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
