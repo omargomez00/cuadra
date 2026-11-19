@@ -10,8 +10,18 @@ Proyecto de **Formulación y Evaluación de Proyectos** — Programa de Ingenier
 | --- | --- | --- |
 | Portada | `index.html` | Redirección al sitio |
 | Producto / Nosotros | `nosotros.html` | Landing: propuesta de valor, funcionalidades, planes y validación de mercado |
-| Cajero | `cajero.html` | Punto de venta responsive (escritorio y celular) |
+| Aplicación | `cajero.html` | Cajero, ventas, inventario, reportes y configuración |
 | Vista previa | `preview.html` | Maqueta con las tres vistas a escala |
+
+### Módulos de la aplicación
+
+- **Cajero:** catálogo, carrito, métodos de pago y cobro con cálculo de cambio.
+- **Ventas:** historial por periodo, KPIs, detalle de cada venta y anulación con devolución de stock.
+- **Inventario:** existencias, ajustes de stock, alertas de reposición y alta/edición de productos.
+- **Reportes:** ventas por día, métodos de pago, productos más vendidos y cuadre de caja.
+- **Configuración:** datos del negocio y preferencias.
+
+Los datos de la demo se guardan en `localStorage`, así que las ventas del cajero se reflejan en los demás módulos y persisten al recargar.
 
 ## Estructura
 
