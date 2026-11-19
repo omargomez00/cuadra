@@ -1074,6 +1074,6 @@ img { max-width: 100%; }
 }
 
 @media (max-width: 420px) {
-  .kpis { grid-template-columns: 1fr; }
-  .item-fila__main { flex-basis: 100%; }
+  .item-fila__main { flex: 1 1 130px; }
+  .item-fila__meta { display: none; }
 }
