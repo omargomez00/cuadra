@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E7B4F">
+<title>Cuadra · Tu caja cuadrada, sin cuadernos</title>
+<meta name="description" content="Cuadra es la aplicación de ventas e inventario para tiendas de barrio, minimercados y papelerías de Sincelejo. Funciona sin internet y desde tu celular.">
+<link rel="icon" href="assets/logo-cuadra.svg">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body class="site">
+
+<!-- ================= NAVEGACIÓN ================= -->
+<header class="site-nav">
+  <a class="site-nav__marca" href="nosotros.html">
+    <img src="assets/logo-cuadra.svg" alt="Cuadra">
+    Cuadra
+  </a>
+
+  <nav class="site-nav__links" aria-label="Secciones">
+    <a href="#producto">Producto</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#planes">Planes</a>
+    <a href="#preguntas">Preguntas</a>
+  </nav>
+
+  <div class="site-nav__cta">
+    <a class="btn btn-ghost" href="cajero.html">Ver el cajero</a>
+    <a class="btn btn-primary" href="#planes">Probar 7 días gratis</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="envoltura hero__grid">
+      <div>
+        <span class="etiqueta">
+          🇨🇴 Hecho en Sincelejo para el comercio de barrio
+        </span>
+
+        <h1>Cuadra tu caja.<br>Sin cuadernos, <em>sin enredos</em>.</h1>
+
+        <p class="hero__texto">
+          Registra tus ventas, cuadra el efectivo del día y controla tu inventario
+          desde el celular que ya tienes. Cuadra funciona <b>sin internet</b> y te
+          avisa cuando un producto se está agotando.
+        </p>
+
+        <div class="hero__acciones">
+          <a class="btn btn-primary btn-lg" href="cajero.html">
+            Abrir el cajero
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#planes">Ver planes y precios</a>
+        </div>
+
+        <p class="hero__nota">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#0E7B4F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          Tutoría de adopción incluida · sin comprar equipos nuevos
+        </p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hv-card" aria-hidden="true">
+          <div class="hv-head">
+            <img src="assets/logo-cuadra.svg" alt="">
+            <b>Caja 1 · Turno mañana</b>
+            <span>En línea</span>
+          </div>
+
+          <div class="hv-row"><i>🍚</i><p>Arroz Diana 1 kg<small>2 unidades</small></p><b>$9.600</b></div>
+          <div class="hv-row"><i>🛢️</i><p>Aceite Girasol 1 L<small>1 unidad</small></p><b>$8.900</b></div>
+          <div class="hv-row"><i>🥤</i><p>Gaseosa 1.5 L<small>1 unidad</small></p><b>$5.500</b></div>
+
+          <div class="hv-total"><span>Total de la venta</span><b>$24.000</b></div>
+          <div class="hv-btn">Cobrar</div>
+        </div>
+
+        <div class="hv-chip hv-chip--1">✓ Funciona sin internet</div>
+        <div class="hv-chip hv-chip--2">Caja cuadrada · <b>$248.500</b></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CIFRAS ================= -->
+  <section class="cifras">
+    <div class="envoltura cifras__grid">
+      <div class="cifra"><b>90<span>%</span></b><p>de los negocios aún registra sus ventas en papel o Excel</p></div>
+      <div class="cifra"><b>357</b><p>comercios encuestados en Sincelejo validaron la idea</p></div>
+      <div class="cifra"><b>100<span>%</span></b><p>manifestó intención de adoptar la herramienta</p></div>
+      <div class="cifra"><b>72,7<span>%</span></b><p>pagaría entre $30.000 y $50.000 al mes</p></div>
+    </div>
+  </section>
+
+  <!-- ================= PRODUCTO ================= -->
+  <section class="seccion" id="producto">
+    <div class="envoltura">
+      <div class="seccion__cab seccion__cab--centro">
+        <span class="etiqueta">El producto</span>
+        <h2>Todo lo que necesitas en el mostrador</h2>
+        <p>Una sola aplicación para vender, cuadrar la caja y saber qué te falta. Sin instalaciones, sin equipos nuevos y sin curva de aprendizaje.</p>
+      </div>
+
+      <div class="rejilla-3">
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2l20 20M8.5 16.5a5 5 0 0 1 7 0M5 12.9a10 10 0 0 1 5.2-2.8M19 12.9a10 10 0 0 0-2.2-1.7M1.5 8.8a15 15 0 0 1 4.6-2.6M22.5 8.8a15 15 0 0 0-9-3.6"/></svg>
+          </div>
+          <h3>Funciona sin internet</h3>
+          <p>Registra ventas aunque se caiga la red. Cuando vuelve la señal, Cuadra sincroniza todo sola en la nube.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="3"/><circle cx="12" cy="12.5" r="3"/><path d="M6 10h.01M18 15h.01"/></svg>
+          </div>
+          <h3>Cuadre de caja automático</h3>
+          <p>Se acabó contar plata al final del día. Cuadra calcula el efectivo esperado y te muestra si hay descuadre.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
+          </div>
+          <h3>Inventario bajo control</h3>
+          <p>Entradas y salidas de mercancía, alertas de existencias bajas y reportes de rotación por producto.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          </div>
+          <h3>Reportes que sí entiendes</h3>
+          <p>Cuánto vendiste, cuánto ganaste y qué producto te deja más margen. Sin términos contables complicados.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>
+          </div>
+          <h3>Desde tu propio celular</h3>
+          <p>Se instala desde un enlace o código QR, como una app normal. No necesitas comprar computador ni datáfono.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="tarjeta__icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.9 8.9 0 0 1-4-.9L3 21l1.9-4.9a8.4 8.4 0 0 1-1-4A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5z"/></svg>
+          </div>
+          <h3>Soporte por WhatsApp</h3>
+          <p>Un humano te responde en menos de 15 minutos. Además, te acompañamos con la tutoría inicial en tu negocio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROBLEMA / SOLUCIÓN ================= -->
+  <section class="seccion seccion--menta">
+    <div class="envoltura">
+      <div class="seccion__cab seccion__cab--centro">
+        <span class="etiqueta etiqueta--ambar">El problema real</span>
+        <h2>El cuaderno no te dice cuánto estás ganando</h2>
+      </div>
+
+      <div class="duo">
+        <div class="duo__caja duo__caja--problema">
+          <h3>Hoy, en la mayoría de tiendas</h3>
+          <ul>
+            <li><span>✕</span> Las ventas se anotan en cuaderno o en Excel, y se pierden.</li>
+            <li><span>✕</span> Al final del día la caja no cuadra y nadie sabe por qué.</li>
+            <li><span>✕</span> No se conoce el margen real de cada producto.</li>
+            <li><span>✕</span> La mercancía se vence o se agota sin darse cuenta.</li>
+            <li><span>✕</span> Los sistemas POS tradicionales son caros y complicados.</li>
+          </ul>
+        </div>
+
+        <div class="duo__caja duo__caja--solucion">
+          <h3>Con Cuadra</h3>
+          <ul>
+            <li><span>✓</span> Cada venta queda registrada en segundos, desde el celular.</li>
+            <li><span>✓</span> El cuadre de caja se calcula solo, sin contar billetes.</li>
+            <li><span>✓</span> Ves tus márgenes y tus productos más rentables.</li>
+            <li><span>✓</span> Recibes alertas antes de quedarte sin mercancía.</li>
+            <li><span>✓</span> Pagas una mensualidad baja y no compras equipos.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CÓMO FUNCIONA ================= -->
+  <section class="seccion" id="como-funciona">
+    <div class="envoltura">
+      <div class="seccion__cab">
+        <span class="etiqueta">Puesta en marcha</span>
+        <h2>Empezar toma una tarde, no una semana</h2>
+        <p>Nuestro equipo va hasta tu negocio, deja todo cargado y te enseña a usarlo.</p>
+      </div>
+
+      <div class="pasos">
+        <article class="paso">
+          <h3>Agenda la visita</h3>
+          <p>Nos escribes por WhatsApp y coordinamos una demostración en tu mostrador, con tu propio celular.</p>
+        </article>
+        <article class="paso">
+          <h3>Cargamos tu catálogo</h3>
+          <p>Si quieres, digitamos tu inventario inicial completo. Tú solo firmas y quedas listo para vender.</p>
+        </article>
+        <article class="paso">
+          <h3>Vende y cuadra</h3>
+          <p>Te capacitamos a ti y a tus empleados. Desde ese día, cada venta y cada peso quedan registrados.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PLANES ================= -->
+  <section class="seccion seccion--menta" id="planes">
+    <div class="envoltura">
+      <div class="seccion__cab seccion__cab--centro">
+        <span class="etiqueta">Planes</span>
+        <h2>Precios claros, sin letra menuda</h2>
+        <p>Ambos planes incluyen la tutoría de adopción, el soporte por WhatsApp y las actualizaciones automáticas.</p>
+      </div>
+
+      <div class="planes">
+        <article class="plan">
+          <h3>Normal</h3>
+          <div class="plan__precio"><b>$30.000</b><span>COP / mes</span></div>
+          <p>Para el negocio que quiere dejar el cuaderno y controlar su caja.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Registro ágil de ventas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cuadre de caja diario</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Reportes financieros básicos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Funciona sin internet</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Tutoría de adopción incluida</li>
+          </ul>
+          <a class="btn btn-ghost" href="cajero.html">Empezar con Normal</a>
+        </article>
+
+        <article class="plan plan--destacado">
+          <span class="plan__badge">El más elegido</span>
+          <h3>Premium</h3>
+          <div class="plan__precio"><b>$45.000</b><span>COP / mes</span></div>
+          <p>Para quien necesita saber qué tiene, qué se agota y qué le deja más ganancia.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Todo lo del Plan Normal</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Control integral de inventario</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Entradas y salidas de mercancía</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Alertas de existencias bajas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Reportes de rotación</li>
+          </ul>
+          <a class="btn btn-primary" href="cajero.html">Empezar con Premium</a>
+        </article>
+
+        <article class="plan">
+          <h3>Digitación</h3>
+          <div class="plan__precio"><b>Pago único</b></div>
+          <p>Si no tienes tiempo, nosotros cargamos todo tu inventario inicial.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Conteo físico del inventario</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Lectura de códigos de barras</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Carga masiva a la base de datos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Cotizado según número de referencias</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contacto">Pedir cotización</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIO / VALIDACIÓN ================= -->
+  <section class="seccion" id="nosotros">
+    <div class="envoltura">
+      <div class="testimonio">
+        <div>
+          <blockquote>
+            “Antes cerrábamos a las ocho y nos quedábamos hasta las nueve contando plata
+            y cuadrando el cuaderno. Con Cuadra el <b>cuadre sale solo</b> y ya sabemos
+            qué producto se está acabando.”
+          </blockquote>
+          <div class="testimonio__autor">
+            <span class="avatar">MR</span>
+            <span>
+              <b>María R.</b>
+              <span>Minimercado en el barrio San José · Sincelejo</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="testimonio__datos">
+          <div class="testimonio__dato"><span>Negocios encuestados</span><b>357</b></div>
+          <div class="testimonio__dato"><span>Intención de adopción</span><b>100 %</b></div>
+          <div class="testimonio__dato"><span>Tiempo de soporte</span><b>&lt; 15 min</b></div>
+          <div class="testimonio__dato"><span>Implementación</span><b>1 a 3 meses</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PREGUNTAS ================= -->
+  <section class="seccion seccion--menta" id="preguntas">
+    <div class="envoltura">
+      <div class="seccion__cab seccion__cab--centro">
+        <span class="etiqueta">Dudas frecuentes</span>
+        <h2>Lo que todo tendero pregunta</h2>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>¿Necesito comprar computador o datáfono?</summary>
+          <p>No. Cuadra funciona en el celular o el computador que ya tienes en el mostrador. Se abre desde el navegador y se puede instalar en la pantalla de inicio como cualquier aplicación.</p>
+        </details>
+
+        <details>
+          <summary>¿Qué pasa si se va el internet o la luz?</summary>
+          <p>Puedes seguir vendiendo. La aplicación guarda las ventas en el propio dispositivo y las sincroniza automáticamente cuando vuelve la conexión.</p>
+        </details>
+
+        <details>
+          <summary>¿Sirve para mi tipo de negocio?</summary>
+          <p>Está pensada para tiendas de barrio, minimercados, papelerías, ferreterías, boutiques y negocios mixtos como peluquerías o panaderías que manejan inventario físico.</p>
+        </details>
+
+        <details>
+          <summary>¿Me toca digitar todos los productos?</summary>
+          <p>Puedes hacerlo tú o contratar el servicio de digitación. Nuestro equipo va al negocio, cuenta el inventario y lo deja cargado en el sistema.</p>
+        </details>
+
+        <details>
+          <summary>¿Puedo cancelar cuando quiera?</summary>
+          <p>Sí. Los planes son mensuales y no tienen cláusula de permanencia. Si cancelas, puedes exportar tu información.</p>
+        </details>
+
+        <details>
+          <summary>¿Mis datos están seguros?</summary>
+          <p>Sí. Cumplimos la Ley 1581 de 2012 de protección de datos personales, la información viaja cifrada y hacemos copias de respaldo automáticas todos los días.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="envoltura" id="contacto">
+    <div class="cta-final">
+      <h2>Tu próxima venta puede quedar cuadrada</h2>
+      <p>Prueba el cajero ahora mismo o escríbenos para agendar una demostración en tu negocio, sin costo y sin compromiso.</p>
+      <div class="cta-final__acciones">
+        <a class="btn btn-ambar btn-lg" href="cajero.html">Probar el cajero</a>
+        <a class="btn btn-blanco btn-lg" href="#">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= PIE ================= -->
+<footer class="site-pie">
+  <div class="envoltura">
+    <div class="site-pie__grid">
+      <div>
+        <div class="site-pie__marca">
+          <img src="assets/logo-cuadra.svg" alt="">
+          Cuadra
+        </div>
+        <p>Software de gestión comercial para las micro y pequeñas empresas de Sincelejo, Sucre.</p>
+      </div>
+
+      <div>
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="#producto">Funcionalidades</a></li>
+          <li><a href="#planes">Planes y precios</a></li>
+          <li><a href="cajero.html">Vista de cajero</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>Sincelejo, Sucre</li>
+          <li>WhatsApp Business</li>
+          <li>hola@cuadra.co</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-pie__fin">
+      <span>© 2026 Cuadra S.A.S. · Todos los derechos reservados.</span>
+      <span>Hecho en Colombia 🇨🇴</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
